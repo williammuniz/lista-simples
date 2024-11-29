@@ -1,0 +1,5 @@
+<div class="item"  [class.item__add]="isOdd"
+    [class.item__highlighted]="isSelected" (click)="selectPerson()">
+    <p class="item__name">{{ personName }}</p>
+    <p class="item__age">{{ personAge }}</p>
+</div>
