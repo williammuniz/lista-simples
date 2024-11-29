@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { PersonComponent } from "./components/person/person.component";
+import { disableDebugTools } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +20,8 @@ export class AppComponent {
     { name: 'Tobias Muniz', age: 4 },
     { name: 'Bruce Dickinson', age: 70 },
     { name: 'Rogério Ceni', age: 42 },
+    { name: 'Lucas Moura', age: 34 },
+    
   ];
 
   selectPerson(index: number) {
